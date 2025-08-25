@@ -47,7 +47,7 @@ cart.forEach((cartItem) => {
         </div>
 
         <div class="delivery-options">
-          <div class="delivery-options-title">ß
+          <div class="delivery-options-title">
             Choose a delivery option:
           </div>
           <div class="delivery-option">
@@ -102,7 +102,7 @@ document.querySelectorAll('.js-delete-link')
   .forEach((link) => {
 
     link.addEventListener('click', () => {
-      
+
       const productId = link.dataset.productId;
       removeFromCart(productId);
       const container = document.querySelector(`.js-cart-item-container-${productId}`);
