@@ -136,12 +136,3 @@ document.querySelectorAll('.js-delete-link')
     });
   });
 
-document.querySelectorAll('.js-delivery-option')
-  .forEach((element) => {
-
-    element.addEventListener('click', () => {
-      const productId = element.dataset.productId;
-      const deliveryOptionId = element.dataset.deliveryOptionId;
-      updateDeliveryOption(productId,deliveryOptionId);
-    });
-  });
